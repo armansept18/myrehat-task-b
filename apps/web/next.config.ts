@@ -1,6 +1,7 @@
 import { varlockNextConfigPlugin } from "@varlock/nextjs-integration/plugin";
 
 const withVarlock = varlockNextConfigPlugin();
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -17,6 +18,10 @@ const nextConfig: NextConfig = {
       {
         source: "/api/auth/:path*",
         destination: "http://server:3000/api/auth/:path*",
+      },
+      {
+        source: "/api/webhooks/:path*",
+        destination: "http://server:3000/api/webhooks/:path*",
       },
     ];
   },

@@ -18,3 +18,6 @@ const requireAuth = o.middleware(async ({ context, next }) => {
 });
 
 export const protectedProcedure = publicProcedure.use(requireAuth);
+
+export * from "./routers/listings.schema";
+export * from "./waha";

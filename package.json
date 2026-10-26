@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "test": "vitest run",
     "check-types": "turbo run check-types",
     "dev:web": "turbo run dev -F web --",
     "dev:server": "turbo run dev -F server --",
@@ -26,6 +27,9 @@
     "check": "biome check --write ."
   },
   "dependencies": {
+    "@openrouter/ai-sdk-provider": "^3.1.0",
+    "ai": "catalog:",
+    "ai-sdk-provider-opencode-sdk": "^5.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
@@ -34,7 +38,8 @@
     "@types/bun": "catalog:",
     "turbo": "^2.11.7",
     "typescript": "catalog:",
-    "varlock": "catalog:"
+    "varlock": "catalog:",
+    "vitest": "^5.0.5"
   },
   "packageManager": "pnpm@11.15.1"
 }

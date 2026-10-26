@@ -12,10 +12,13 @@
   "dependencies": {
     "@myrehat-task-b/auth": "workspace:*",
     "@myrehat-task-b/db": "workspace:*",
+    "@openrouter/ai-sdk-provider": "^3.1.0",
     "@orpc/client": "catalog:",
     "@orpc/openapi": "catalog:",
     "@orpc/server": "catalog:",
     "@orpc/zod": "catalog:",
+    "ai": "catalog:",
+    "drizzle-orm": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
