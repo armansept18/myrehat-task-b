@@ -56,5 +56,3 @@ coverage
 .cache
 tmp
 temp
-.agent
-.agent\*
